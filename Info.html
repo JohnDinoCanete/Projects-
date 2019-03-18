@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Info</title>
+	<link rel="stylesheet" type="text/css" href="Front.css">
+	<link rel="stylesheet" type="text/css" href="Signin.html">
+	<link rel="stylesheet" type="text/css" href="Register.html">
+	<link rel="stylesheet" type="text/css" href="#">
+	<link rel="stylesheet" type="text/css" href="Letters.html">
+	<link rel="stylesheet" type="text/css" href="Numbers.html">
+	<link rel="stylesheet" type="text/css" href="Info.html">
+	<link rel="stylesheet" type="text/css" href="front.html">
+  <link rel="stylesheet" type="text/css" href="info.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:900|Lilita+One|Wendy+One" rel="stylesheet">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		 <div class="row">
+    <div class="col-sm-3 col-md-3">
+    	<a href="Songs.html"><span class="glyphicon glyphicon-play-circle"></span> KID'S SONGS</a>
+    </div>
+    	<div class="col-sm-3 col-md-3">
+    		<a href="Letters.html"> ABCD</a>
+    	</div>
+    	<div class="col-sm-3 col-md-3">
+    	<a href="Numbers.html">	Counting Numbers 1-10</a>
+    	</div>
+    	<div class="col-sm-3 col-md-3">
+    		<a href="Info.html"><span class="glyphicon glyphicon-user"></span>Premium</a>
+    		</div>
+    	</div>
+    	</div>
+	</div>
+    <div class="box1">
+      <h1>Upgrade your account to premium to browse more.</h1>
+
+  <form action="/action_page.php">
+    <p><br><br><br>
+     <label> Card Name</label>
+  <input type="text" name="" id="fname" placeholder="John Dino" required><br>
+  <label> Card number </label>
+  <input type="text" name="" id="lname" placeholder="12346789" required><br>
+  <label> Zip Code </label>
+  <input type="text" name="" id="mname" placeholder="7474" required><br>
+   </form>
+   <input type="submit" value="Submit Payment" onclick="card()" required>
+   <br><br><br><br>
+   <br><br>
+   <label>Name On Card:</label><br><p id="out1" style="color: red;"></p>
+   <label>Card number:</label> <br><p id="out2"style="color: red;"></p>
+    <label>Zip Code:</label><br><p id="out3"style="color: red;"></p>
+    </div>
+    <script type="text/javascript">
+     function card() {
+        var firstname = document.getElementById("fname").value;
+      document.getElementById("out1").innerHTML = firstname
+      var lastname = document.getElementById("lname").value;
+      document.getElementById("out2").innerHTML = lastname;
+      var middlename = document.getElementById("mname").value;
+      document.getElementById("out3").innerHTML = middlename;
+     {
+      alert('YOU REGISTERED SUCCESSFULY').innerHTML.value;
+     }
+    }
+    </script>
+</body>
+</html>
